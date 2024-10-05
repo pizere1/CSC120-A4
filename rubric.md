@@ -12,7 +12,7 @@ Listed below are various aspects of the assignment.  When you turn in your work,
 
 ### Level 1 (4 pts)
 
-___Part__ 1 pt: All classes, methods, and attributes are named as requested in the assignment specifications
+___YES__ 1 pt: All classes, methods, and attributes are named as requested in the assignment specifications
 
 __YES___ 1 pt: The `Engine` class contains appropriately-encapsulated attributes to store information about its fuel type, capacity, and current level
 
@@ -32,30 +32,30 @@ __YES___ 1 pt: The `Car` class has a `printManifest()` method that prints a nice
 
 __YES___ 1 pt: The `Passenger` class uses appropriate methods from the `Car` class to implement its `boardCar(...)` and `getOffCar(...)` methods
 
-__PART___ 1 pt: The `Train` class has all expected attributes / relationships with the other classes
+__YES___ 1 pt: The `Train` class has all expected attributes / relationships with the other classes
 
-__PART___ 1 pt: The `Train` class has all expected methods, making use of methods from other classes as appropriate
+__yes___ 1 pt: The `Train` class has all expected methods, making use of methods from other classes as appropriate
 
 
 
 ## General Items:
 
-__PART___ 4 pts: Programs compile without errors or warnings
+__YES___ 4 pts: Programs compile without errors or warnings
 
-__PART___ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+__YES___ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
 ___PART__ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       __NO___ Classes & class members all have Javadoc header comments
 
-      ___PART__ Clear and consistent indentation of bracketed sections
+      ___YES__ Clear and consistent indentation of bracketed sections
 
-      __PART___ Adheres to Java conventions on naming & capitalization
+      __YES___ Adheres to Java conventions on naming & capitalization
 
-      __part___ Methods & variables all have clear and accurate names
+      __YES___ Methods & variables all have clear and accurate names
 
-      __PART___ Methods avoid confusing side effects
+      __YES___ Methods avoid confusing side effects
 
-__PART___ 1 pt: All required files included with submission (including completed `rubric.md` file)
+__YES___ 1 pt: All required files included with submission (including completed `rubric.md` file)
 
-__NO___ 1 pt: `reflection.md` contains your reflection on the assignment
+__YES___ 1 pt: `reflection.md` contains your reflection on the assignment
