@@ -38,5 +38,12 @@ public class Engine {
                break;
            }
             }
-       System.out.println("Current fuel level: " + this.currentFuelLevel); }
+       System.out.println("Current fuel level: " + this.currentFuelLevel);
+    }
+
+    @Override
+    public String toString() {
+        System.out.println("");
+        return "Engine Fuel: " + f + ", currentFuelLevel= " + currentFuelLevel + " maxFuelLevel= " + maxFuelLevel;
+    }
 }
