@@ -1,15 +1,15 @@
 public class Passenger {
-    private String name;
-    private int ticketid=0;
-    private String carboarded;
+    private  final String name;
+    private  final String destination;
 
-    Passenger(String name) {
+    Passenger(String name, String destination) {
         this.name = name;
+        this.destination = destination;
     }
     public void boardCar(Car c) {
         if(c.addPassenger(this)){
             System.out.println("Passenger "+this.name+" added to the car");
-            ticketid=ticketid+1;
+
             //carboarded = c.getClass().getName();
         }
         else {
@@ -23,10 +23,9 @@ public class Passenger {
     }
     public void getpassengerinfo() {
         System.out.println();
-        System.out.println(this.name + " has the ticket 00" + this.ticketid);
+        System.out.println("Passenger Name: "+this.name+" Destination: "+this.destination);
     }
     public String toString() {
-        System.out.println();
         return this.name;
     }
 }
