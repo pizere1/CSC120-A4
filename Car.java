@@ -1,21 +1,23 @@
 import java.util.ArrayList;
 public class Car {
-    private int maxcapacity;
-    private int Capacity = 0;
+    private final int maxcapacity;
     private int seatsRemaining;
     ArrayList<Passenger> passenger;
-
-    Car(int n) {
+    private int ticket;
+    Car(int n,Train2 T) {
         this.maxcapacity = n;
         this.passenger = new ArrayList<Passenger>(this.maxcapacity);
+        T.addCar(this);
     }
 
-    public int getCapacity() {
+    public int getMaxcapacity() {
         return this.maxcapacity;
     }
-
+    public int getcurrentCapacity() {
+        return this.passenger.size();
+    }
     public int getSeatsRemaining() {
-        this.seatsRemaining = this.maxcapacity - this.Capacity;
+        this.seatsRemaining = this.maxcapacity - this.passenger.size();
         return this.seatsRemaining;
     }
     public boolean addPassenger(Passenger p){
@@ -24,7 +26,6 @@ public class Car {
             return false;
         }
         if(this.passenger.size() < this.maxcapacity){
-            this.Capacity+=1;
             this.passenger.add(p);
             return true;
         }
@@ -36,7 +37,6 @@ public class Car {
         if(this.passenger.contains(p))
         {
             this.passenger.remove(p);
-            this.Capacity-=1;
             System.out.println("Passenger "+p+ " removed ");
             return true;
         }
@@ -45,12 +45,10 @@ public class Car {
             return false;}
     }
     public void printManifest(){
-            if(this.getCapacity()>0){
-                System.out.println("");
-                System.out.println("This is the passengers list");
+            if(this.getMaxcapacity()>0){
                 for(int i=0; i<this.passenger.size(); i++){
-                    System.out.print("Passenger "+(i+1)+" : ");
-                    System.out.println(passenger.get(i).toString());
+                    ticket=(i+1);
+                    System.out.println("Passenger "+(i+1)+" : " +passenger.get(i).toString()+ " has ticket "+ticket);
                 }
             }
             else{
