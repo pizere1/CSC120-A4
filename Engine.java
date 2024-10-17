@@ -7,8 +7,8 @@ public class Engine {
     private double maxFuelLevel;
     /**
      * Constructor
-     * @param f
-     * @param maxFuelLevel
+     * @param f takes in the fueltype
+     * @param maxFuelLevel takes in the maximum fuel level
      * */
     public Engine(FuelType f, double maxFuelLevel) {
         this.f = f;
@@ -39,7 +39,7 @@ public class Engine {
 
     /**
      * refuel method
-     * @param additionalFuel
+     * @param additionalFuel takes in the fuel added to refuel
      */
 
     public void refuel(double additionalFuel) {
