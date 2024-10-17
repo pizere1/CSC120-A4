@@ -10,8 +10,8 @@
 
         /**
          * Constructor
-         * @param n
-         * @param T
+         * @param n maximum capacity of the car
+         * @param T Train which holds the car
          */
         public Car(int n,Train T) {
             this.maxcapacity = n;
