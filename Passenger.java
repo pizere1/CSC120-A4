@@ -6,8 +6,8 @@
      private  final String destination;
      /**
       * Constructor
-      * @param name
-      * @param destination
+      * @param name takes in the name of the passenger
+      * @param destination takes in the passenger's destination
       */
      public Passenger(String name, String destination) {
             this.name = name;
@@ -23,7 +23,7 @@
          if(c.addPassenger(this)){
              System.out.println("Passenger "+this.name+" added to the car");
          } else {
-             System.out.println("Passenger not added to the car");
+             System.out.println("Passenger "+this.name+" not added to the car");
          }
      }
      /**
