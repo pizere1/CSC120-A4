@@ -45,7 +45,7 @@
 
         /**
          * method to add passenger to the car
-         * @param p
+         * @param p takes in a passenger to be added
          * @return true if the passenger is not on board hence added or
          * false if the passenger is already in the car or the car is full
          */
@@ -56,15 +56,16 @@
             }
             if(this.passenger.size() < this.maxcapacity){
                 this.passenger.add(p);
+                System.out.println("Added a passenger to the car");
                 return true;
             } else{
                 System.out.println("Sorry cannot add " +p+" to this car, it is Full. Try another one");
-                return false; }
+                return false;}
         }
 
         /**
          * method to remove the passengers
-         * @param p
+         * @param p takes in a passenger to be removed
          * @return true if the passenger was successfully removed from the car
          * or false if the passenger was on the car or the car was empty
          */
