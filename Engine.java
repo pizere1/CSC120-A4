@@ -69,7 +69,7 @@ public class Engine {
 
                 if (this.currentFuelLevel <=0){
                     System.out.println("");
-                    System.out.println("Cannot go without refuel. Please refuel.");
+                    System.out.println("Cannot go further without refuel. Please refuel.");
                     break;
                 }
         }
