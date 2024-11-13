@@ -15,7 +15,7 @@ public class Engine {
         this.maxFuelLevel = maxFuelLevel;
     }
     /**FuelType accessor
-     * @return f
+     * @return f fuelType
      */
     public FuelType getFuelType() {
         return this.f;
@@ -23,7 +23,7 @@ public class Engine {
 
     /**
      * CurrentfuelLevel accessor
-      * @return currentfuelLevel
+      * @return currentfuelLevel of the engine
      */
     public double getCurrentFuelLevel() {
         return this.currentFuelLevel;
@@ -31,7 +31,7 @@ public class Engine {
 
     /**
      * MaxFuelLevel accessor
-     * @return MaxFuelLevel
+     * @return MaxFuelLevel of the engine
      */
     public double getMaxFuelLevel() {
         return this.maxFuelLevel;
@@ -77,6 +77,7 @@ public class Engine {
     }
     /**
      * Output formatting
+     * @return the organized Engine components rather than its memory location.
      */
     public String toString() {
         System.out.println("");
