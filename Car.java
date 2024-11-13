@@ -3,7 +3,7 @@
         /**
          * Attributes
          */
-        private final int maxcapacity;
+        private int maxcapacity;
         private int seatsRemaining;
         private ArrayList<Passenger> passenger;
         private int ticket;
