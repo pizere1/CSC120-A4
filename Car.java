@@ -11,12 +11,12 @@
         /**
          * Constructor
          * @param n maximum capacity of the car
-         * @param T Train which holds the car
+         * @param t Train which holds the car
          */
-        public Car(int n,Train T) {
+        public Car(int n,Train t) {
             this.maxcapacity = n;
             this.passenger = new ArrayList<Passenger>(this.maxcapacity);
-            T.addCar(this);
+            t.addCar(this);
         }
         /**
          * maximum Capacity getter
@@ -46,8 +46,7 @@
         /**
          * method to add passenger to the car
          * @param p takes in a passenger to be added
-         * @return true if the passenger is not on board hence added or
-         * false if the passenger is already in the car or the car is full
+         * @return true if the passenger is not on board hence added or false if the passenger is already in the car or the car is full
          */
         public boolean addPassenger(Passenger p){
             if(this.passenger.contains(p)){
@@ -60,18 +59,17 @@
                 return true;
             } else{
                 System.out.println("Sorry cannot add " +p+" to this car, it is Full. Try another one");
-                return false;}
+                return false;
+            }
         }
 
         /**
          * method to remove the passengers
          * @param p takes in a passenger to be removed
-         * @return true if the passenger was successfully removed from the car
-         * or false if the passenger was on the car or the car was empty
+         * @return true if the passenger was successfully removed from the car or false if the passenger was on the car or the car was empty
          */
         public boolean removePassenger(Passenger p){
-            if(this.passenger.contains(p))
-            {
+            if(this.passenger.contains(p)) {
                 this.passenger.remove(p);
                 System.out.println("Passenger "+p+ " removed ");
                 return true;
